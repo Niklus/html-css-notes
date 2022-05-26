@@ -66,7 +66,7 @@ HyperText Markup Language and Cascading Style Sheets - notes
 
 - If you have more than one blank space, it will be rendered as one blank space in the browser.
 - Newline characters are converted into a single blank space character.
-- If you need to render a new line character, you have to use the <br> tag.
+- If you need to render a new line character, you have to use the br tag.
 - The Line Break br element produces a new line (also called carriage-return).
 - The br element should not be used to separate paragraphs or two elements. It should only be used to create a new line within the same sentence or context.
 
