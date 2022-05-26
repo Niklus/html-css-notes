@@ -84,3 +84,7 @@ HyperText Markup Language and Cascading Style Sheets - notes
 - Breaking up content into paragraphs helps make a page more accessible.
 - A paragraph does not necessarily need to have more than one sentence.
 - You will notice that a paragraph always starts on a new line. Also, browsers will automatically add some space that acts as a separation before and after the paragraph.
+- Multiple paragraphs should be wrapped with multiple paragraph elements.
+- The br element should not be used to separate paragraphs or two elements. Instead, it should only be used to create a new line within the same sentence or context.
+- It's important to know that you cannot nest a paragraph inside another one.
+- While you don't technically need to wrap text with a p element, we recommend that you do. This helps you write semantic and accessible code.
