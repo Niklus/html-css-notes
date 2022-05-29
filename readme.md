@@ -88,3 +88,65 @@ HyperText Markup Language and Cascading Style Sheets - notes
 - The br element should not be used to separate paragraphs or two elements. Instead, it should only be used to create a new line within the same sentence or context.
 - It's important to know that you cannot nest a paragraph inside another one.
 - While you don't technically need to wrap text with a p element, we recommend that you do. This helps you write semantic and accessible code.
+
+## Lists
+
+- The ol (ordered list) element represents a list of items where the items have been intentionally ordered. Changing the order would change the meaning of the list (most likely breaking the original meaning).
+- The ul element represents a list of items where the order of the items does not matter. Changing the order would not change the meaning of the document.
+- The li (list item) element is used inside either an ol or a ul element. It does not have a meaning by itself, so it must be written inside an ol or ul.
+- The ol and ul both represent a list of items. When the order matters, you should use an ol. When the order doesn't matter, you should use ul.
+- An element is said to be nested inside another one when the opening and closing tags of the first element wrap the other element.
+- ol>li + Tab will generate an ol element with a li element nested inside of it.
+
+## HTML Validity
+
+- Modern browsers never crash because of invalid HTML.
+- Valid HTML will make your life easier when maintaining websites.
+- The w3 offers an HTML validator hosted at validator.w3.org.
+- Our recommendation in this course is to try often and validate your HTML code manually using this website. It will serve as a learning experience.
+- Failing the validation with a few errors is better than failing with a dozen or a hundred.
+
+## Landmark Elements
+
+- Landmark elements aim to break the page into several recognizable areas.
+- Accessibility benefit: A user can use accessibility software such as a screen reader to navigate and understand these landmarks.
+- Semantics benefit: Machines such as search engines can better understand your page and how your website is linked when you have content inside landmarks.
+- The main element is used to represent the dominant contents of the page. It contains the content related to the main topic of the page.
+- The header element represents the content used to introduce the web page. This usually contains a heading element (such as h1), a logo, and some navigational elements (covered later).
+- The footer element represents the footer of the page. The word footer here does not necessarily mean that the element is visually placed at the bottom of the page. Instead, it contains data usually represented towards the end of a document. Such as links to related documents, copyright data, additional information, etc.
+
+## strong and b elements
+
+- The strong element is used to represent content that has strong importance, seriousness, or urgency. This is usually seen in relation to its surrounding.
+- The strong element is represented by most browsers as bold text. But, this should not be the reason why it's used.
+- The b element (bring attention to) is used to draw attention to some content without giving it more importance, seriousness, or urgency.
+- The differences between strong and b are subtle. It all comes down to whether you want to give importance to the content (strong) or not (b).
+- As long as you're not overusing the strong and b tags, you can usually use strong if you're in doubt.
+
+## em and i elements
+
+- The em (emphasis) element represents a word or group of words that are stress emphasized. This often affects the meaning of the sentence.
+- The em element is represented by most browsers as italic text (this is italic text). But, this should not be the reason why it's used.
+- The i (idiomatic text) element represents a word or group of words usually said in an alternate voice or mood. It could also be used to denote technical terms, words from other languages, or idioms.
+- It's a good practice to add the lang attribute when i is representing content in a different language.
+- The strong element is used to represent content that has strong importance. In contrast, the em element is used to convey stress.
+
+## Inline vs Block Elements
+
+- The strong, em, b, and i elements behave differently than the p, ul, ol, li, and h1-h6 elements.
+- p, ul, ol, li, div, and h1-h6 are block elements.
+- Block elements stretch into the entire line.
+- The strong, em, b, and i elements are examples of inline elements.
+- Inline elements do not stretch into the entire line. They take up as much space as their content.
+
+## The img element
+
+- The img element is used to display an image on the page.
+- The src attribute (short) for source is used on the img element to define the path (location) of the image to be loaded.
+- The width and height attributes are used to define the image's aspect ratio. The browser uses this to reserve the appropriate number of pixels on the screen while the image is loading. Once the image is fully loaded, the empty pixels are swapped with the image without causing a layout shift.
+- Make sure always to include the width and height attributes with the correct values, even if you'd like to make the image responsive. We'll discuss that later when we learn about CSS.
+- Several scenarios prevent an image from being displayed.
+- Providing an alternative text has many benefits. Mostly for accessibility and SEO.
+- A decorative image is an image used for the sole purpose of aesthetics and design on a page. These require an empty alt text alt="".
+- Informative images are images that add value to a web page. These require descriptive alt text.
+- You should always provide an alt attribute (whether that's an empty string or an actual alternative text).
