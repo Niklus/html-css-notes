@@ -150,3 +150,60 @@ HyperText Markup Language and Cascading Style Sheets - notes
 - A decorative image is an image used for the sole purpose of aesthetics and design on a page. These require an empty alt text alt="".
 - Informative images are images that add value to a web page. These require descriptive alt text.
 - You should always provide an alt attribute (whether that's an empty string or an actual alternative text).
+
+## CSS
+
+- CSS stands for Cascading Style Sheets.
+- CSS is used to style and design the content you wrote in HTML.
+- So, CSS goes hand-in-hand with HTML. However, it's important to note that:
+  - HTML is used for the content.
+  - CSS is used for styling.
+- The style tags are used in this course's lessons to display short HTML + CSS code combined.
+- A CSS selector is used to find the elements in a webpage that will receive a set of styles.
+- The CSS syntax is made up of 2 main elements:
+  1.  A CSS selector (for example, h1)
+  2.  A set of declarations that will be applied for this selector (the code between the curly braces).
+- A declaration can be broken down into two parts:
+  1.  CSS property (for example, color).
+  2.  Value (for example, red).
+- A CSS Comment /_ comment here _/ is ignored by the browser.
+
+## Font Weight
+
+- font-weight: bold makes a text represented in bold without affecting its semantic meaning.
+- font-weight: normal makes a text represented in normal font weight (not bold).
+- The strong element should not be used to make an element styled in bold. It should only be used to convey semantic meaning. A strong element can be rendered without bold font by adjusting its font-weight.
+
+## The Cascade
+
+The cascade is a set of rules defined by CSS that dictates which declaration is chosen when an element has the same property (but potentially with different values).
+
+- The last encountered property will overwrite a previously specified property.
+- Later, we'll learn about specificity, which affects how properties are overwritten.
+- You can usually access DevTools by right-clicking anywhere on the page and selecting the Inspect or Inspect element option.
+
+## User-Agent Stylesheet
+
+- A user-agent stylesheet refers to a stylesheet provided by your browser.
+- User-agent styles have the lowest priority in the cascade. Any CSS code you write will always overwrite the user-agent's styles.
+- Every browser has a CSS file (user-agent stylesheet) that is always included first. Your CSS code comes after this. You never have to write the styles that are provided by the user-agent.
+- User-agent styles are meant as a "default" stylesheet. Any CSS code you write will then overwrite it.
+
+## CSS Inheritance
+
+- Many CSS properties (but not all of them) are inherited. This means the CSS property will affect the child elements (as long as we do not overwrite it).
+- When a CSS property value is passed from a parent to a child during inheritance, we call that value a computed value.
+
+## font-size property
+
+- The font-size CSS property is used to set the size of the font used on the current element.
+- The font-size property is inherited.
+- On the web, a pixel's size is not standardized. A pixel might be larger or smaller than on other displays. This is usually not an issue with the way we write responsive CSS.
+- The page's default font-size is 16px.
+
+## Block vs Inline Elements
+
+- Block elements stretch and take up the entire line.
+- Inline elements take up as much space as their content and do not stretch the entire line. This means they go within other content without "jumping" on a new line.
+- By default, all HTML elements are set to display: inline. Then, the user-agent stylesheet will set specific elements to have a display: block.
+- These elements have a display: block: p, ul, ol, li, h1-h6, div.
